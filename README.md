@@ -10,7 +10,7 @@ The home screen has three options:
 * **Saved Passwords** opens the labeled list. Select an entry to show its password, type it into a focused field over USB or Bluetooth, change its label, or delete it. **Type password** lets you choose USB or Bluetooth, then shows the connection and typing status. After typing, press **OK** to repeat or retry the input, or **Back** to return. It types only the password; it does not press Enter or submit the form.
 * **About** displays the plaintext-storage warning.
 
-Each password is stored as plaintext in its own `password_<id>.txt` file, preceded by `Password: `; labels are stored separately in `labels.txt`. The files persist in the app's data directory. The vault supports up to 20 entries, with labels up to 31 characters and passwords up to 63 characters. Existing combined password files are migrated to individual files when the app starts.
+Each password is stored as plaintext in its own `password_<id>.txt` file, preceded by `STRING `; labels are stored separately in `labels.txt`. The files persist in the app's data directory. The vault supports up to 20 entries, with labels up to 31 characters and passwords up to 63 characters. Existing combined password files are migrated to individual files when the app starts.
 
 ## Security warning
 
