@@ -1,0 +1,18 @@
+App(
+    appid="fpass_app",
+    name="FPass",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="main_fpass_app",
+    stack_size=8 * 1024,
+    requires=[
+        "gui",
+        "storage",
+        "bt",
+    ],
+    order=10,
+    fap_icon="app.png",
+    fap_category="Tools",
+    fap_icon_assets="assets",
+    fap_libs=["ble_profile"],
+    fap_description="Plaintext password-list prototype with USB and BLE keyboard typing; do not use for real credentials.",
+)
